@@ -3,78 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.example.com/post/creating-a-new-theme/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/about/</loc>
+    <lastmod>2017-08-28T21:41:52+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/migrate-from-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/post/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/post/chinese-preview/</loc>
+    <lastmod>2017-08-30T01:37:56+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.example.com/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/post/</loc>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/contact/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/tags/preview/</loc>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/post/goisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/post/hugoisforlovers/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/tags/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/tags/golang/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.example.com/tags/hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/tags/tag-1/</loc>
+    <lastmod>2017-08-30T01:37:56+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.example.com/tags/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/tags/templates/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/tags/%E4%B8%AD%E6%96%87/</loc>
+    <lastmod>2017-08-30T01:37:56+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.example.com/tags/themes/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://www.example.com/tags/syntax-highlighting/</loc>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/post/syntax-highlighting/</loc>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.example.com/tags/tag-5/</loc>
+    <lastmod>2018-11-05T16:01:23+08:00</lastmod>
   </url>
   
   <url>
