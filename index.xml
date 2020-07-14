@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blackburn Theme Demo</title>
+    <title>Taltalite&#39;s Notebook</title>
     <link>https://taltalite.github.io/</link>
-    <description>Recent content on Blackburn Theme Demo</description>
+    <description>Recent content on Taltalite&#39;s Notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2020. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://taltalite.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>https://taltalite.github.io/post/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>gitlab开发参考流程</title>
+      <link>https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://taltalite.github.io/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <guid>https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/</guid>
+      <description>介绍 项目开发 采用 feature branch workflow。
+ 首先， master 分支包含经过周密测试的最稳定代码，供比赛使用。 develop 分支基于 master 进行演化， 用于进行联合调试和联合测试。 在基于相对完整和稳定的 develop 分支上，开发者们可以构建日常最常用的特性分支（feature branch)，并在这些分支上完成开发工作。 开发完成后，分支下游的改动逐层上传，上游集成各模块并处理各模块的冲突后，下游又拉取(pull)并迭代开发。分支演化的一个简易的示例如下所示：  master├── hotfix│ ├── hotfix_issue_123└── develop 注意 在已有的稳定版本master分支上发现了未预料的BUG，可从hotfix分支上创建新的hotfix_issue_123分支。
+ 参考工作流 工作流简介 采用敏捷开发的基本工作流程，利用issue进行开发活动的管理。
+ 首先，开发一个新功能前必须先撰写issue，内容采用feature模板，并对issue设置合理的Label (模块归属，讨论，ToDo等) 和计划的Due date（参考Milestone，可不完全一致） issue划分的参考准则是在较短的时间内&amp;lt;4周可完成的功能，较大的issue作为Epic或者进行拆分 其次，每周讨论将合理的issue分配到Doing并由Maintainer分配developer处理该issue Maintainer或者一名负责该issue的developer从该issue创建merge request或创建branch，并选择正确的目标分支 (develop)  merge request 会直接创建一个WIP merge request，并且创建一个该issue的远端分支，WIP表示该merge request还未完成 create branch 会创建一个该issue的远端分支   所有处理该issue的developer在本地创建该issue的远端分支的跟踪分支，直接在该分支上进行工作；或者继续创建该跟踪分支的子分支，完成子分支工作后merge到该跟踪分支上 完成工作后，maintainer负责处理该issue的merge request  工作流示意   克隆项目:
+git clone https://gitlab.com/xxx.git   从ISSUE创建工作分支</description>
     </item>
     
     <item>
@@ -44,15 +47,6 @@ It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
 Setup Some fun facts about Hugo:
  Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://taltalite.github.io/contact/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://taltalite.github.io/contact/</guid>
-      <description> &amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;last-name&amp;quot;&amp;gt;Last Name&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;last-name&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;E-Mail&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;email&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;email&amp;quot; required&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;city&amp;quot;&amp;gt;City&amp;lt;/label&amp;gt;&amp;lt;input id=&amp;quot;city&amp;quot; class=&amp;quot;pure-u-23-24&amp;quot; type=&amp;quot;text&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;pure-u-1 pure-u-md-1-3&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;state&amp;quot;&amp;gt;State&amp;lt;/label&amp;gt;&amp;lt;select id=&amp;quot;state&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot;&amp;gt;&amp;lt;option&amp;gt;AL&amp;lt;/option&amp;gt;&amp;lt;option&amp;gt;CA&amp;lt;/option&amp;gt;&amp;lt;option&amp;gt;IL&amp;lt;/option&amp;gt;&amp;lt;/select&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;fieldset class=&amp;quot;pure-group&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;A title&amp;quot;&amp;gt;&amp;lt;textarea class=&amp;quot;pure-input-1-2&amp;quot; placeholder=&amp;quot;Your message&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/fieldset&amp;gt;&amp;lt;button type=&amp;quot;submit&amp;quot; class=&amp;quot;pure-button pure-button-primary&amp;quot;&amp;gt;Send&amp;lt;/button&amp;gt; </description>
     </item>
     
     <item>
