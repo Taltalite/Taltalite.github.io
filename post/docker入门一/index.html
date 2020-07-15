@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.74.0" />
 
-  <title>Getting Started with Hugo &middot; Taltalite&#39;s Notebook</title>
+  <title>docker入门（一） &middot; Taltalite&#39;s Notebook</title>
 
     
 
@@ -202,7 +202,7 @@
 
 
 <div class="header">
-  <h1>Getting Started with Hugo</h1>
+  <h1>docker入门（一）</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -211,102 +211,53 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>02 Apr 2014, 00:00</time>
+    <time>14 Jul 2020, 00:00</time>
   </div>
 
   
 
   
 
-  
-  
-  
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="https://taltalite.github.io/tags/go">go</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://taltalite.github.io/tags/golang">golang</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://taltalite.github.io/tags/hugo">hugo</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="https://taltalite.github.io/tags/development">development</a>
-    
-  </div>
-  
   
 
 </div>
 
-  <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
-<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
-appropriate version for your os and architecture.</p>
-<p>Save it somewhere specific as we will be using it in the next step.</p>
-<p>More complete instructions are available at <a href="https://taltalite.github.io/overview/installing/">installing hugo</a></p>
-<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
-<p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p>
-<p>Follow the following steps:</p>
-<ol>
-<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
-<li>Go into the repo</li>
-<li>Run hugo in server mode and build the docs</li>
-<li>Open your browser to http://localhost:1313</li>
-</ol>
-<p>Corresponding pseudo commands:</p>
-<pre><code>git clone https://github.com/spf13/hugo
-cd hugo
-/path/to/where/you/installed/hugo server --source=./docs
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Press ctrl+c to stop
-</code></pre>
-<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
-<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
-<p>Stop the Hugo process by hitting ctrl+c.</p>
-<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
-<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 27 ms
-&gt; Web Server is available at http://localhost:1313
-&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
-&gt; Press ctrl+c to stop
-</code></pre>
-<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
-<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
-are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p>
-<p>Change and save this file.. Notice what happened in your terminal.</p>
-<pre><code>&gt; Change detected, rebuilding site
-
-&gt; 29 pages created
-&gt; 0 tags index created
-&gt; in 26 ms
-</code></pre>
-<p>Refresh the browser and observe that the typo is now fixed.</p>
-<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
-<h2 id="step-4-have-fun">Step 4. Have fun</h2>
-<p>The best way to learn something is to play with it.</p>
+  <h1 id="win10-系统安装docker">Win10 系统安装docker</h1>
+<h2 id="开启hyper-v">开启Hyper-V</h2>
+<p><img src="https://www.runoob.com/wp-content/uploads/2017/12/1513668234-4363-20171206211136409-1609350099.png" alt="image01"></p>
+<p>然后选择<strong>程序和功能</strong></p>
+<p><strong>启用或关闭Windows功能</strong></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2017/12/1513668234-6433-20171206211858191-1177002365.png" alt="image02"></p>
+<h2 id="安装toolbox">安装toolbox</h2>
+<p>访问https://www.docker.com/</p>
+<p>先注册一个docker hub账号，然后登录，选择Get started with DockersDesktop</p>
+<p><img src="https://i.ibb.co/TbwWD6V/docker1-1.png" alt="image03"></p>
+<p><img src="https://i.ibb.co/PMRLMyM/docker1-2.png" alt="image04"></p>
+<p>接下来根据安装提示即可完成安装</p>
+<h2 id="上手">上手</h2>
+<h3 id="git-clone-一个demo">git clone 一个demo</h3>
+<p><img src="https://i.ibb.co/10DvQR8/docker1-3.png" alt="image05"></p>
+<h3 id="build-the-image">build the image</h3>
+<p><img src="https://i.ibb.co/YXSwwxP/docker1-4.png" alt="image05"></p>
+<h3 id="run-first-container">run first container</h3>
+<p><img src="https://i.ibb.co/68R0drS/docker1-5.png" alt="image05"></p>
+<h3 id="save--share-image">save &amp; share image</h3>
+<p><img src="https://i.ibb.co/rMthfcK/docker1-6.png" alt="image05"></p>
 
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fhugoisforlovers%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -338,8 +289,14 @@ Having nearly instant feedback enables you to have your creativity flow without 
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/">gitlab开发参考流程</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -347,14 +304,8 @@ Having nearly instant feedback enables you to have your creativity flow without 
   </div>
   <div class="pure-u-10-24">
     
-    <nav class="next">
-      <a href="https://taltalite.github.io/post/goisforlovers/">(Hu)go Template Primer</a>
-    </nav>
-    
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
-    
-    <a href="https://taltalite.github.io/post/goisforlovers/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

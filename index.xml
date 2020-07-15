@@ -13,6 +13,20 @@
     
     
     <item>
+      <title>docker入门（一）</title>
+      <link>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/</guid>
+      <description>Win10 系统安装docker 开启Hyper-V 然后选择程序和功能
+启用或关闭Windows功能
+安装toolbox 访问https://www.docker.com/
+先注册一个docker hub账号，然后登录，选择Get started with DockersDesktop
+接下来根据安装提示即可完成安装
+上手 git clone 一个demo build the image run first container save &amp;amp; share image </description>
+    </item>
+    
+    <item>
       <title>gitlab开发参考流程</title>
       <link>https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
@@ -26,17 +40,6 @@ git clone https://gitlab.com/xxx.git   从ISSUE创建工作分支</description>
     </item>
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>https://taltalite.github.io/post/migrate-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://taltalite.github.io/post/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/▾ images/logo.png should become
-▾ &amp;lt;root&amp;gt;/▾ static/▾ images/logo.png Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>https://taltalite.github.io/about/</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
@@ -47,30 +50,6 @@ It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
 Setup Some fun facts about Hugo:
  Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://taltalite.github.io/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://taltalite.github.io/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://taltalite.github.io/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://taltalite.github.io/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
   </channel>
