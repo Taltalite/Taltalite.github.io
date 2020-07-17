@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.74.0" />
 
-  <title>win10安装docker &middot; Taltalite&#39;s Notebook</title>
+  <title>win10配置docker国内镜像 &middot; Taltalite&#39;s Notebook</title>
 
     
 
@@ -202,7 +202,7 @@
 
 
 <div class="header">
-  <h1>win10安装docker</h1>
+  <h1>win10配置docker国内镜像</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -211,7 +211,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>15 Jul 2020, 00:00</time>
+    <time>16 Jul 2020, 00:00</time>
   </div>
 
   
@@ -222,42 +222,36 @@
 
 </div>
 
-  <h1 id="win10-系统安装docker">Win10 系统安装docker</h1>
-<h2 id="开启hyper-v">开启Hyper-V</h2>
-<p><img src="https://www.runoob.com/wp-content/uploads/2017/12/1513668234-4363-20171206211136409-1609350099.png" alt="image01"></p>
-<p>然后选择<strong>程序和功能</strong></p>
-<p><strong>启用或关闭Windows功能</strong></p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2017/12/1513668234-6433-20171206211858191-1177002365.png" alt="image02"></p>
-<h2 id="安装toolbox">安装toolbox</h2>
-<p>访问https://www.docker.com/</p>
-<p>先注册一个docker hub账号，然后登录，选择Get started with DockersDesktop</p>
-<p><img src="https://i.ibb.co/TbwWD6V/docker1-1.png" alt="image03"></p>
-<p><img src="https://i.ibb.co/PMRLMyM/docker1-2.png" alt="image04"></p>
-<p>接下来根据安装提示即可完成安装</p>
-<h2 id="上手">上手</h2>
-<h3 id="git-clone-一个demo">git clone 一个demo</h3>
-<p><img src="https://i.ibb.co/10DvQR8/docker1-3.png" alt="image05"></p>
-<h3 id="build-the-image">build the image</h3>
-<p><img src="https://i.ibb.co/YXSwwxP/docker1-4.png" alt="image05"></p>
-<h3 id="run-first-container">run first container</h3>
-<p><img src="https://i.ibb.co/68R0drS/docker1-5.png" alt="image05"></p>
-<h3 id="save--share-image">save &amp; share image</h3>
-<p><img src="https://i.ibb.co/rMthfcK/docker1-6.png" alt="image05"></p>
-
+  <h1 id="win10配置docker国内镜像">win10配置docker国内镜像</h1>
+<p>国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。国内很多云服务商都提供了国内加速器服务，例如：</p>
+<ul>
+<li>网易云加速器 <a href="https://hub-mirror.c.163.com">https://hub-mirror.c.163.com</a></li>
+<li>百度云加速器 <a href="https://mirror.baidubce.com">https://mirror.baidubce.com</a></li>
+<li>阿里云加速器(需登录账号获取)</li>
+</ul>
+<p>由于镜像服务可能出现宕机，建议同时配置多个镜像。各个镜像站测试结果请到 <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test/actions">docker-practice/docker-registry-cn-mirror-test</a> 查看。</p>
+<p>对于使用 Windows 10 的用户，在任务栏托盘 Docker 图标内右键菜单选择 Settings，打开配置窗口后在左侧导航菜单选择 Docker Engine，在右侧像下边一样编辑 json 文件，之后点击 Apply &amp; Restart 保存后 Docker 就会重启并应用配置的镜像地址了。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">{</span>
+  <span style="color:#e6db74">&#34;registry-mirrors&#34;</span>: <span style="color:#f92672">[</span>
+    <span style="color:#e6db74">&#34;https://hub-mirror.c.163.com&#34;</span>,
+    <span style="color:#e6db74">&#34;https://mirror.baidubce.com&#34;</span>
+  <span style="color:#f92672">]</span>
+<span style="color:#f92672">}</span>
+</code></pre></div>
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
 <ul class="share-buttons">
-	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
+	<li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f" target="_blank" title="Share on Facebook"><i class="fa-facebook" aria-hidden="true"></i><span class="sr-only">Share on Facebook</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
+	<li><a href="https://twitter.com/intent/tweet?source=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f&via=HorribleGeek" target="_blank" title="Tweet"><i class="fa-twitter" aria-hidden="true"></i><span class="sr-only">Tweet</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
+	<li><a href="https://plus.google.com/share?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f" target="_blank" title="Share on Google+"><i class="fa-google-plus" aria-hidden="true"></i><span class="sr-only">Share on Google+</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
+	<li><a href="http://www.tumblr.com/share?v=3&u=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f" target="_blank" title="Post to Tumblr"><i class="fa-tumblr" aria-hidden="true"></i><span class="sr-only">Post to Tumblr</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
+	<li><a href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f" target="_blank" title="Pin it"><i class="fa-pinterest-p" aria-hidden="true"></i><span class="sr-only">Pin it</span></a>
 	</li>&nbsp;&nbsp;&nbsp;
-	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25B8%2580%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
+	<li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftaltalite.github.io%2fpost%2fdocker%25E5%2585%25A5%25E9%2597%25A8%25E4%25BA%258C%2f" target="_blank" title="Submit to Reddit"><i class="fa-reddit-alien" aria-hidden="true"></i><span class="sr-only">Submit to Reddit</span></a>
 	</li>
 </ul>
 
@@ -289,13 +283,13 @@
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
-    <a href="https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/"><i class="fa fa-chevron-left"></i></a>
+    <a href="https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/"><i class="fa fa-chevron-left"></i></a>
     
   </div>
   <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="https://taltalite.github.io/post/gitlab%E5%BC%80%E5%8F%91%E5%8F%82%E8%80%83%E6%B5%81%E7%A8%8B/">gitlab开发参考流程</a>
+      <a href="https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/">win10安装docker</a>
     </nav>
     
   </div>
@@ -305,13 +299,13 @@
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%BA%8C/">win10配置docker国内镜像</a>
+      <a href="https://taltalite.github.io/post/docker%E9%83%A8%E7%BD%B2hadoop/">docker部署hadoop</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%BA%8C/"><i class="fa fa-chevron-right"></i></a>
+    <a href="https://taltalite.github.io/post/docker%E9%83%A8%E7%BD%B2hadoop/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

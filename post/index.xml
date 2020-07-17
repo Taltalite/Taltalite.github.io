@@ -7,15 +7,47 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2020. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://taltalite.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>docker入门（一）</title>
+      <title>docker部署hadoop</title>
+      <link>https://taltalite.github.io/post/docker%E9%83%A8%E7%BD%B2hadoop/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://taltalite.github.io/post/docker%E9%83%A8%E7%BD%B2hadoop/</guid>
+      <description>本文参考文章
+ https://yeasy.gitbook.io/docker_practice/image/rm
+https://www.centos.bz/2018/07/docker%E9%83%A8%E7%BD%B2hadoop%E9%9B%86%E7%BE%A4/
+ 获取CentOS 7镜象 docker pull centos 74MB左右，使用国内源很快就能下好
+有了镜像后，我们就能够以这个镜像为基础启动并运行一个容器。
+如果我们打算启动里面的 bash 并且进行交互式操作的话，可以执行下面的命令。
+docker run -it --rm centos bash 使用
+exit 就可以退出该容器
+这里简要的说明一下上面用到的参数。
+ -it：这是两个参数，一个是 -i：交互式操作，一个是 -t 终端。我们这里打算进入 bash 执行一些命令并查看返回结果，因此我们需要交互式终端。 &amp;ndash;rm：这个参数是说容器退出后随之将其删除。默认情况下，为了排障需求，退出的容器并不会立即删除，除非手动 docker rm。我们这里只是随便执行个命令，看看结果，不需要排障和保留结果，因此使用 &amp;ndash;rm 可以避免浪费空间。 centos：这是指用 centos 镜像为基础来启动容器。 bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 bash。  使用 Dockerfile 定制镜像 Dockerfile 是一个文本文件，其内包含了一条条的 指令(Instruction)，每一条指令构建一层，因此每一条指令的内容，就是描述该层应当如何构建。
+mkdir centos-ssh cd centos-ssh new-item Dockerfile -type file 编辑刚刚建立的Dockerfile，加入下述内容：
+FROMcentosMAINTAINERtaltaliteRUN yum install -y openssh-server sudoRUN sed -i &amp;#39;s/UsePAM yes/UsePAM no/g&amp;#39; /etc/ssh/sshd_configRUN yum install -y openssh-clientsRUN echo &amp;#34;root:abc123&amp;#34; | chpasswdRUN echo &amp;#34;root ALL=(ALL) ALL&amp;#34; &amp;gt;&amp;gt; /etc/sudoersRUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_keyRUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_keyRUN mkdir /var/run/sshdEXPOSE22CMD [&amp;#34;/usr/sbin/sshd&amp;#34;, &amp;#34;-D&amp;#34;]这段内容的大意是：以 centos 镜像为基础，安装SSH的相关包，设置了root用户的密码为 abc123，并启动SSH服务执行构建镜像的命令，新镜像命名为 centos-ssh</description>
+    </item>
+    
+    <item>
+      <title>win10配置docker国内镜像</title>
+      <link>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%BA%8C/</link>
+      <pubDate>Thu, 16 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%BA%8C/</guid>
+      <description>win10配置docker国内镜像 国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。国内很多云服务商都提供了国内加速器服务，例如：
+ 网易云加速器 https://hub-mirror.c.163.com 百度云加速器 https://mirror.baidubce.com 阿里云加速器(需登录账号获取)  由于镜像服务可能出现宕机，建议同时配置多个镜像。各个镜像站测试结果请到 docker-practice/docker-registry-cn-mirror-test 查看。
+对于使用 Windows 10 的用户，在任务栏托盘 Docker 图标内右键菜单选择 Settings，打开配置窗口后在左侧导航菜单选择 Docker Engine，在右侧像下边一样编辑 json 文件，之后点击 Apply &amp;amp; Restart 保存后 Docker 就会重启并应用配置的镜像地址了。
+{ &amp;#34;registry-mirrors&amp;#34;: [ &amp;#34;https://hub-mirror.c.163.com&amp;#34;, &amp;#34;https://mirror.baidubce.com&amp;#34; ] } </description>
+    </item>
+    
+    <item>
+      <title>win10安装docker</title>
       <link>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/</link>
-      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://taltalite.github.io/post/docker%E5%85%A5%E9%97%A8%E4%B8%80/</guid>
       <description>Win10 系统安装docker 开启Hyper-V 然后选择程序和功能
