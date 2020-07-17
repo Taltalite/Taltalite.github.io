@@ -449,12 +449,12 @@ SHUTDOWN_MSG: Shutting down NameNode at hadoop0/192.168.10.10
 <h2 id="启动hadoop集群">启动hadoop集群</h2>
 <p>如果是hadoop3.0-3.3版本，需要进行一下设置：</p>
 <p>进入/usr/local/hadoop/sbin</p>
-<p>编辑start-dfs.sh文件，在<strong>文件开头</strong>加入：</p>
+<p>编辑start-dfs.sh和stop-dfs.sh文件，在<strong>文件开头</strong>加入：</p>
 <pre><code>HDFS_DATANODE_USER=root
 HADOOP_SECURE_DN_USER=hdfs
 HDFS_NAMENODE_USER=root
 HDFS_SECONDARYNAMENODE_USER=root 
-</code></pre><p>编辑start-yarn.sh文件，在<strong>文件开头</strong>加入：</p>
+</code></pre><p>编辑start-yarn.sh和stop-yarn.sh文件，在<strong>文件开头</strong>加入：</p>
 <pre><code>YARN_RESOURCEMANAGER_USER=root
 HADOOP_SECURE_DN_USER=yarn
 YARN_NODEMANAGER_USER=root
@@ -472,6 +472,17 @@ Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:33:52 UTC <span sty
 <h2 id="停止hadoop集群">停止hadoop集群</h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># /usr/local/hadoop 目录下执行</span>
 sbin/stop-all.sh
+</code></pre></div><p>见到如下类似信息则表明停止成功：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Stopping namenodes on <span style="color:#f92672">[</span>hadoop0<span style="color:#f92672">]</span>
+Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:33:54 UTC <span style="color:#ae81ff">2020</span> on pts/0
+Stopping datanodes
+Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:51:11 UTC <span style="color:#ae81ff">2020</span> on pts/0
+Stopping secondary namenodes <span style="color:#f92672">[</span>hadoop0<span style="color:#f92672">]</span>
+Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:51:12 UTC <span style="color:#ae81ff">2020</span> on pts/0
+Stopping nodemanagers
+Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:51:15 UTC <span style="color:#ae81ff">2020</span> on pts/0
+Stopping resourcemanager
+Last login: Fri Jul <span style="color:#ae81ff">17</span> 10:51:18 UTC <span style="color:#ae81ff">2020</span> on pts/0
 </code></pre></div>
   
   <h4><i class="fa-share-alt" aria-hidden="true"></i>&nbsp;Share!</h4>
