@@ -363,6 +363,49 @@ git clone https://gitlab.com/xxx.git   从ISSUE创建工作分支
 </article>
 
   
+    <article>
+  <header>
+    <h2><a href="https://taltalite.github.io/post/2020-7-20/">2020-7-20 实习报告</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>20 Jul 2020, 00:00</time>
+  </div>
+
+  
+
+  
+
+  
+
+</div>
+
+  </header>
+
+  <p>
+  Mindspore MindSpore是由华为于2019年8月推出的新一代全场景AI计算框架，2020年3月28日，华为宣布MindSpore正式开源。
+Mindspore的提出是为了解决AI从研究到生产环境存在巨大鸿沟的问题。
+Mindspore框架使用原生的Python API，在自动微分上Mindspore兼具了Tensorflow的快速与PyTorch的可编程性，是一个优秀的AI框架。
+Mindspore的编程接口更加接近于tensorflow。
+简单尝试 因为云服务器暂时存在问题，下面只记录本地部署的简要过程。
+下载并安装anaconda https://www.anaconda.com/
+建立python环境 新建一个python环境，并设置版本为python3.7
+下载并安装mindspore https://www.mindspore.cn/install/
+选择对应的版本，使用pip命令安装即可
+pip install https://ms-release.obs.cn-north-4.myhuaweicloud.com/0.5.0-beta/MindSpore/cpu/windows_x64/mindspore-0.5.0-cp37-cp37m-win_amd64.whl 实践LeNet+MNIST git clone https://gitee.com/mindspore/course.git 运行项目下的experiment_1的main.py就可以了。
+不过因为上述过程中安装的是0.5版本，0.5版本中Mindspore删除了内置的LeNet，需要换成下面的main.py以执行。
+https://gitee.com/mindspore/course/attach_files
+训练完成后得到的验证精度为：
+Metrics: {'loss': 0.06536033208958077, 'acc': 0.9769631410256411}心得体会 首次了解并接触到了Mindspore框架，在初次的尝试中发现Mindspore编程接口与Tensorflow的前端keras库十分接近，上手起来难度较低。
+结合Mindspore + 华为云的优势，开发者可以使用充足的云端算力来进行模型的训练，模型的部署也较tensorflow和pytorch灵活。这样，Mindspore十分有希望填补深度学习从研究到生产之间的鸿沟，作为一个新兴的框架，我认为Mindspore是非常有潜力的。
+  </p>
+
+  
+</article>
+
+  
 
   
 
